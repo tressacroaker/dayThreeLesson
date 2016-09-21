@@ -1,0 +1,94 @@
+h1 {
+  font-size: 45px;
+  margin: 0;
+}
+header h1, header img {
+  display: inline-block;
+}
+
+header {
+  border: 2px solid black;
+  height: 250px;
+}
+
+img {
+  height: 200px;
+}
+
+p {
+  display: none;
+}
+
+.box {
+  border: 1px solid black;
+  background-color:  lightblue;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  /*margin: 10px;*/
+  font-size: 50px;
+}
+
+/*#num1 {
+  position: relative;
+  z-index: 10;
+}*/
+
+#num2 {
+  position:relative;
+  bottom: 150px;
+  background-color: red;
+}
+
+#num3 {
+  position:relative;
+  bottom: 300px;
+  background-color: green;
+}
+
+#num4 {
+  position:relative;
+  bottom: 400px;
+  background-color: purple;
+}
+
+/*.container {
+  /*width: 100vw;*/
+  /*height: max-content;*/
+  /*use with flex-direction: column*/
+
+  /*display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}*/*/
+
+
+
+@media only screen and (max-width: 1018px) {
+  span {
+    display:none;
+    /*this will change where we added the span in the html to the new title when it hits the max width: 1018px*/
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  header h1 {
+    display: none;
+  }
+  /*when it reaches this point move to this next row*/
+  header {
+    text-align: center;
+  }
+  img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1018px;) {
+  p {
+  display: block;
+  }
+}
